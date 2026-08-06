@@ -7,6 +7,8 @@ namespace Coding_Practice.Controllers
         public IActionResult Index()
         {
             return View();
+
+            //test branch
         }
     }
 }
