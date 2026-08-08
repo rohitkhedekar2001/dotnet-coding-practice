@@ -1,4 +1,6 @@
 
+using Coding_Practice.Service;
+
 namespace Coding_Practice
 {
     public class Program
@@ -13,6 +15,7 @@ namespace Coding_Practice
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IBegginerrCodingQuestion, BegginerrCodingQuestion>();
 
             var app = builder.Build();
 
