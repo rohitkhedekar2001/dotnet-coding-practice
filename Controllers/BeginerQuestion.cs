@@ -22,5 +22,14 @@ namespace Coding_Practice.Controllers
 
             return Ok(result);
         }
+
+
+        [HttpGet("getemployee")]
+        public IActionResult GetEmployeeByLinq(string input)
+        {
+            var result = _codingQuestion.GetActiveITEmployees();
+
+            return Ok(result);
+        }
     }
 }
